@@ -1,0 +1,25 @@
+<ion-view view-title="REGISTER" hide-back-button="true">
+  <ion-content class="stable-bg padding text-center">
+  			<label class="item item-stable"><h3>ABOUT YOU (1 of 3)</h3></label>
+  			<br>
+  	<ion-list class="item-stable">
+	        <label class="item item-input">
+	        <span class="input-label">FIRST NAME</span>
+	                <input ng-modal="fname" type="text" placeholder="INPUT First Name">
+	        </label>
+	        <label class="item item-input ">
+	        <span class="input-label">SUR NAME</span>
+	                <input ng-modal="sname" type="text" placeholder="INPUT Sur Name">	        
+	        </label>
+	        <label class="item item-input ">
+	        <span class="input-label">EMAIL ADDRESS</span>
+	                <input ng-modal="email" type="text" placeholder="INPUT Email Address">
+	        </label>
+	        <label class="item item-input item-stable">
+	        		<button class="button button-block button-light" ng-click="fNext()">
+					  NEXT
+					</button>
+	        </label>
+	</ion-list>
+  </ion-content>
+</ion-view>

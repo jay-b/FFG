@@ -38,9 +38,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','p
     templateUrl: 'templates/tabs.html',
     controller: 'DashCtrl'
   })
-  .state('ffg', {
-    url: '/ffg',
-    templateUrl: 'templates/ffg.html'
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl'
+  })
+  .state('register1', {
+    url: '/register1',
+    templateUrl: 'templates/register1.html',
+    controller: 'Register1Ctrl'
+  })
+
+  .state('register2', {
+    url: '/register2',
+    templateUrl: 'templates/register2.html',
+    controller: 'Register2Ctrl'
+  })
+
+  .state('register3', {
+    url: '/register3',
+    templateUrl: 'templates/register3.html',
+    controller: 'Register3Ctrl'
+  })
+  .state('register_view', {
+    url: '/register_view',
+    templateUrl: 'templates/register_view.html',
+    controller: 'RegisterViewCtrl'
   })
   // Each tab has its own nav history stack:
 
@@ -84,6 +107,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','p
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/ffg');
+  $urlRouterProvider.otherwise('/login');
 
 });

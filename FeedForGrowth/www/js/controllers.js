@@ -1,10 +1,38 @@
 angular.module('starter.controllers', [])
-.controller('FFGCtrl', function($scope) {
-
-
+.controller('LoginCtrl', function($scope,$state) {
+  $scope.fLogin = function()
+    {
+      $state.go('tab.dash');
+    }
+  $scope.fRegister = function()
+    {
+      $state.go('register1');
+    }
 })
-
-
+.controller('Register1Ctrl', function($scope,$state) {
+  $scope.fNext = function()
+    {
+      $state.go('register2');
+    }
+})
+.controller('Register2Ctrl', function($scope,$state) {
+  $scope.fNext = function()
+    {
+      $state.go('register3');
+    }
+})
+.controller('Register3Ctrl', function($scope,$state) {
+  $scope.fRegisterView = function()
+    {
+      $state.go('register_view');
+    }
+})
+.controller('RegisterViewCtrl', function($scope,$state) {
+  $scope.fCountinue = function()
+    {
+      $state.go('register3');
+    }
+})
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

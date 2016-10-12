@@ -1,0 +1,29 @@
+<ion-view view-title="REGISTER" hide-back-button="true">
+  <ion-content class="stable-bg padding text-center">
+  			<label class="item item-stable"><h3>YOUR HOLDING (2 of 3)</h3></label>
+  			<br>
+  	<ion-list class="item-stable">
+	        <label class="item item-input">
+	        <span class="input-label">HOLDING NAME</span>
+	                <input ng-modal="holding_name" type="text" placeholder="INPUT Holding Name">
+	        </label>
+	        <label class="item item-input ">
+	        <span class="input-label">HOLDING REF</span>
+	                <input ng-modal="holding_ref" type="text" placeholder="INPUT Holding Ref">	        
+	        </label>
+	        <label class="item item-input ">
+	        <span class="input-label">BCMS USERNAME</span>
+	                <input ng-modal="bcms_username" type="text" placeholder="INPUT BCMS Username">
+	        </label>
+	        <label class="item item-input ">
+	        <span class="input-label">BCMS PASSWORD</span>
+	                <input ng-modal="bcms_password" type="password" placeholder="INPUT BCMS Password">
+	        </label>
+	        <label class="item item-input item-stable">
+	        		<button class="button button-block button-light" ng-click="fNext()">
+					  NEXT
+					</button>
+	        </label>
+	</ion-list>
+  </ion-content>
+</ion-view>
