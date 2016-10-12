@@ -1,4 +1,9 @@
 angular.module('starter.controllers', [])
+.controller('FFGCtrl', function($scope) {
+
+
+})
+
 
 .controller('DashCtrl', function($scope) {})
 
